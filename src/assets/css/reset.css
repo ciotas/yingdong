@@ -1,0 +1,165 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/* font-size: 100%; */
+	/* font: inherit; */
+	font-family: PingFang SC;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+.pagination-box {
+	text-align: right;
+	margin-top: 30px;
+}
+
+.el-table tr.table-header th {
+	background: #F2F4F6;
+}
+
+.el-container .el-pagination.is-background .el-pager li {
+	background-color: #fff;
+}
+.movie-table .el-table--small td {
+  border-bottom: 0;
+  padding: 20px 0;
+}
+.el-form .el-select {
+  width: 100%;
+}
+.el-form.inline-form > div {
+  display: flex;
+}
+.el-form.inline-form  .el-form-item__content {
+  flex: 1;
+  margin-left: 0!important;
+}
+.el-form.inline-form .el-form-item__label {
+  padding-right: 50px;
+}
+.no-margin .el-form-item--small.el-form-item {
+  margin-bottom: 0;
+}
+.account-form .el-form-item--small .el-form-item__content {
+	width: 250px;
+}
+.el-dialog__header {
+	text-align: center;
+	font-weight: 700;
+}
+.withdraw-modal .el-dialog__body {
+	padding: 30px 0;
+}
+.basic-form .el-form-item {
+	display: flex;
+	justify-content: space-between;
+}
+.basic-form .el-form-item::after, .basic-form .el-form-item::before {
+	content: none;
+}
+.basic-form .el-form-item__label {
+	font-size: 20px;
+	color: #070707;
+}
+.basic-form .el-form-item__content {
+	font-size: 20px;
+	color: #070707;
+	display: flex;
+	align-items: center;
+}
+.basic-form .el-form-item__content .el-input {
+	width: auto;
+}
+.basic-form .el-input__inner {
+	border: 0;
+	font-size: 20px;
+	text-align: right;
+}
+.basic-form .el-form-item__content .withdraw-all {
+	font-size: 16px;
+	color: #3578F5;
+}
+.basic-form input::-webkit-input-placeholder {
+	font-size: 20px;
+}
+.basic-form input::-moz-input-placeholder {
+	font-size: 20px;
+}
+.basic-form input::-ms-input-placeholder {
+	font-size: 20px;
+}
+.confirm-box .el-form-item__label {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+.confirm-box .el-form-item--small.el-form-item {
+	margin-bottom: 60px;
+}
+.confirm-box .el-form-item__content {
+	clear: both;
+}
+
+.normal-form .el-form-item__content {
+	width: 650px;
+}
+.normal-form .el-form-item__content> .el-input, .normal-form .el-form-item__content> .el-select {
+	width: 400px;
+}
+.normal-form .el-form-item--small .el-form-item__label {
+	padding-right: 40px;
+}
+.bold-item.el-form-item--small .el-form-item__label {
+	font-size: 24px;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+  }
