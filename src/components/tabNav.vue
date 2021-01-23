@@ -1,7 +1,7 @@
 <template>
   <div id="tabNav" class="clearfix">
     <div class="logoBox">
-      <img src="../assets/img/index/logo.jpg" alt="" />
+      <router-link to="index"><img src="../assets/img/index/logo.jpg" alt="" /></router-link>
     </div>
     <a class="rightList" href="http://www.incapital.cn/sign">管理</a>
     <ul class="middleList">
