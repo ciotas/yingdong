@@ -15,7 +15,6 @@
         <router-link to="team" tag="a">团队</router-link>
       </li>
       <li>
-<!--        <a href="http://creator.jupaiaction.com/">联系</a>-->
         <router-link to="contact" tag="a">联系</router-link>
       </li>
     </ul>
