@@ -3,7 +3,7 @@
     <div class="logoBox">
       <img src="../assets/img/index/logo.jpg" alt="" />
     </div>
-    <p class="rightList">管理</p>
+    <a class="rightList" href="http://www.incapital.cn/sign">管理</a>
     <ul class="middleList">
       <li>
         <router-link to="index" tag="a">我们</router-link>
@@ -15,7 +15,8 @@
         <router-link to="team" tag="a">团队</router-link>
       </li>
       <li>
-        <a href="http://creator.jupaiaction.com/">联系</a>
+<!--        <a href="http://creator.jupaiaction.com/">联系</a>-->
+        <router-link to="contact" tag="a">联系</router-link>
       </li>
     </ul>
   </div>

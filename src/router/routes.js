@@ -17,6 +17,11 @@ const routes = [{
         name: 'team',
         component: () => import('../views/team.vue')
 
+    },{
+        path: '/contact',
+        name: 'contact',
+        component: () => import('../views/contact.vue')
+
     },
 ]
 export default routes

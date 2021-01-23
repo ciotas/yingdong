@@ -1,96 +1,23 @@
 <template>
 	<div id="team">
 		<tab-nav class="tabNav"> </tab-nav>
-		<div class="col-swipe-container" @mousewheel="handleScroll($event)" @DOMMouseScroll="handleScroll($event)">
+		<div class="col-swipe-container">
 			<div class="col-swipe-wrapper" ref="colSwipeWrapper">
-				<div class="floorBox floorBox1" :class="{ active: top == 0 }">
-					<div class="bg">
-						<img src="../assets/img/index/bg1.png" alt="" />
-					</div>
-					<div class="floorInner">
-						<div class="floatBox">
-							<div class="left">
-								<p class="brife">价值导向</p>
-							</div>
-							<div class="center">
-								<p class="brife">研究驱动</p>
-							</div>
-							<div class="right">
-								<p class="brife">独立思考</p>
-							</div>
-						</div>
-						<p class="title">我们相信科技和创新是驱动社会进步的核心力量</p>
-
-					</div>
-				</div>
-				<div class="floorBox floorBox2" :class="{ active: top == 1 }">
-					<p class="title">团队介绍</p>
-					<div class="floorInner">
-						<div class="left top" @click="showDialog(message1,url1)">
-							<img src="../assets/img/index/bg3.png" alt="">
-							<p>成员1</p>
-						</div>
-						<div class="left center  top"  @click="showDialog(message1,url2)">
-							<img src="../assets/img/index/bg1.png" alt="">
-							<p>成员2</p>
-						</div>
-						<div class="left right  top"  @click="showDialog(message1,url3)">
-							<img src="../assets/img/index/bg3.png" alt="">
-							<p>成员3</p>
-						</div>
-						<div class="left" @click="showDialog(message1,url1)">
-							<img src="../assets/img/index/bg3.png" alt="">
-							<p>成员1</p>
-						</div>
-						<div class="left center"  @click="showDialog(message1,url2)">
-							<img src="../assets/img/index/bg1.png" alt="">
-							<p>成员2</p>
-						</div>
-						<div class="left right"  @click="showDialog(message1,url3)">
-							<img src="../assets/img/index/bg3.png" alt="">
-							<p>成员3</p>
-						</div>
-					</div>
-				</div>
-				<div class="floorBox floorBox3" :class="{ active: top == 2 }">
-					<div class="bg">
-						<img src="../assets/img/index/bg1.png" alt="" />
-					</div>
-					<!-- <div class="floorInner">
-						<p class="title">盈动资本</p>
-						<p class="brife">一家专注于科技和创新领域的早期投资机构。</p>
-						<p class="brife">
-							我们致力于寻找并帮助那些心怀崇高而热切愿望，具创新能力和企业家精神的创业者，一起成就伟大事业
-						</p>
-					</div> -->
-				</div>
 				<footer-box class="footerBox"> </footer-box>
 			</div>
 		</div>
-		<memberDialog :showMemder="showMemder" @closeMember="closeMember" :message="message" :url="url">
-		</memberDialog>
 	</div>
 </template>
 <script>
 import tabNav from '../components/tabNav';
-import memberDialog from '../components/memberDialog';
 import footerBox from "../components/footerBox";
 export default {
-	name: 'team',
-	components: { tabNav, memberDialog,footerBox },
+	name: 'contact',
+	components: { tabNav, footerBox },
 	data() {
 		return {
 			top: 0,
 			timer: null,
-			showMemder: false,
-			message: '',
-			url: '',
-			url1: require('../assets/img/index/bg1.png'),
-			url2: require('../assets/img/index/bg3.png'),
-			url3: require('../assets/img/index/bg1.png'),
-			message1: '成员一简介',
-			message2: '成员二简介',
-			message3: '成员三简介',
 		};
 	},
 	methods: {
@@ -675,7 +602,7 @@ export default {
 				.floorBox {
 					&.floorBox1{
 						.floorInner {
-							padding: 15% 0 0 0;
+							padding: 10% 0 0 0;
 
 							.title {
 								width: 80%;
