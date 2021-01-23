@@ -12,7 +12,7 @@
             <img src="../assets/img/index/bg1.png" alt="" />
           </div>
           <div class="floorInner">
-            <p class="title">专注早期，致力于寻找并帮助那些</p>
+            <p class="brife">专注早期，致力于寻找并帮助那些</p>
             <p class="brife">
               心怀崇高而热切愿望，有企业家精神的创业者开创伟大事业
             </p>
@@ -78,40 +78,17 @@
             </el-carousel>
           </div>
         </div>
-        <div class="floorBox floorBox6">
-          <div class="bg">
-            <img src="../assets/img/index/bg3.png" alt="" />
-          </div>
-          <div class="floorInner">
-            <div class="tip">
-              <p>联系我们</p>
-              <p>关于未来</p>
-              <p>Do more, know more, be more.</p>
-              <p>欢迎联系我们</p>
-              <p>BP投递 bp@incapital.cn 加入盈动 joinus@incapital.cn</p>
-            </div>
-            <div class="btnGroups">
-              <p>BP投递</p>
-              <p>加入盈动</p>
-            </div>
-          </div>
-          <div class="webFooter">
-            <p class="tip">
-              - 2011～2019
-              盈动资本|浙ICP备14004249号|Add：杭州市西湖区文一西路588号
-              中节能西溪首座A2-1-522|Tel：86-571-87997755 -
-            </p>
-          </div>
-        </div>
+        <footer-box class="footerBox"> </footer-box>
       </div>
     </div>
   </div>
 </template>
 <script>
-import tabNav from "../components/tabNav";
-export default {
-  name: "index",
-  components: { tabNav },
+  import tabNav from "../components/tabNav";
+  import footerBox from "../components/footerBox";
+  export default {
+    name: "index",
+    components: { tabNav ,footerBox},
   data() {
     return {
       top: 0,
@@ -666,6 +643,60 @@ export default {
           //   background-size: 100% 100%;
           //   transition: all 10s linear;
           // }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  #index {
+    .col-swipe-container {
+      .col-swipe-wrapper {
+        .floorBox {
+          &.floorBox1{
+            .floorInner {
+              padding: 10% 0 0 0;
+
+              .title {
+                font-size: 30px;
+                font-weight: initial;
+              }
+              .brife {
+                width: 85%;
+                margin: 30px auto 0;
+                font-size: 30px;
+              }
+            }
+          }
+          &.active {
+            .floorInner {
+              .title {
+                opacity: 1;
+                transform: translateY(0);
+                transition: all 1.5s 1s;
+              }
+
+              .brife {
+                opacity: 1;
+                transform: translateY(0);
+                transition: all 1.5s 1.5s;
+              }
+            }
+
+            .bg {
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              // transform: scale(1, 1);
+              transition: all 10s linear;
+            }
+
+            // &.bg {
+            //   background-size: 100% 100%;
+            //   transition: all 10s linear;
+            // }
+          }
         }
       }
     }

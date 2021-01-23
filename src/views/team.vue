@@ -8,21 +8,36 @@
 						<img src="../assets/img/index/bg1.png" alt="" />
 					</div>
 					<div class="floorInner">
-						<p class="title">只投我们想要的世界</p>
 						<div class="floatBox">
 							<div class="left">
-								<p class="brife">基金规模</p>
-								<p class="brife">20亿</p>
+								<p class="brife">价值导向</p>
+							</div>
+							<div class="center">
+								<p class="brife">研究驱动</p>
 							</div>
 							<div class="right">
-								<p class="brife">项目数量</p>
-								<p class="brife">150+</p>
+								<p class="brife">独立思考</p>
 							</div>
 						</div>
+						<p class="title">我们相信科技和创新是驱动社会进步的核心力量</p>
+
 					</div>
 				</div>
 				<div class="floorBox floorBox2" :class="{ active: top == 1 }">
+					<p class="title">团队介绍</p>
 					<div class="floorInner">
+						<div class="left top" @click="showDialog(message1,url1)">
+							<img src="../assets/img/index/bg3.png" alt="">
+							<p>成员1</p>
+						</div>
+						<div class="left center  top"  @click="showDialog(message1,url2)">
+							<img src="../assets/img/index/bg1.png" alt="">
+							<p>成员2</p>
+						</div>
+						<div class="left right  top"  @click="showDialog(message1,url3)">
+							<img src="../assets/img/index/bg3.png" alt="">
+							<p>成员3</p>
+						</div>
 						<div class="left" @click="showDialog(message1,url1)">
 							<img src="../assets/img/index/bg3.png" alt="">
 							<p>成员1</p>
@@ -49,31 +64,7 @@
 						</p>
 					</div> -->
 				</div>
-				<div class="floorBox floorBox6">
-					<div class="bg">
-						<img src="../assets/img/index/bg3.png" alt="" />
-					</div>
-					<div class="floorInner">
-						<div class="tip">
-							<p>联系我们</p>
-							<p>关于未来</p>
-							<p>Do more, know more, be more.</p>
-							<p>欢迎联系我们</p>
-							<p>BP投递 bp@incapital.cn 加入盈动 joinus@incapital.cn</p>
-						</div>
-						<div class="btnGroups">
-							<p>BP投递</p>
-							<p>加入盈动</p>
-						</div>
-					</div>
-					<div class="webFooter">
-						<p class="tip">
-							- 2011～2019
-							盈动资本|浙ICP备14004249号|Add：杭州市西湖区文一西路588号
-							中节能西溪首座A2-1-522|Tel：86-571-87997755 -
-						</p>
-					</div>
-				</div>
+				<footer-box class="footerBox"> </footer-box>
 			</div>
 		</div>
 		<memberDialog :showMemder="showMemder" @closeMember="closeMember" :message="message" :url="url">
@@ -83,9 +74,10 @@
 <script>
 import tabNav from '../components/tabNav';
 import memberDialog from '../components/memberDialog';
+import footerBox from "../components/footerBox";
 export default {
 	name: 'team',
-	components: { tabNav, memberDialog },
+	components: { tabNav, memberDialog,footerBox },
 	data() {
 		return {
 			top: 0,
@@ -202,24 +194,31 @@ export default {
 						letter-spacing: 15px;
 						cursor: pointer;
 						.title {
-							font-size: 120px;
+							font-size: 48px;
 							font-weight: bolder;
 							line-height: 150px;
 							text-align: center;
 							transform: translateY(50px);
 							opacity: 0;
 							transition: all 0;
+							margin: 70px auto 0;
 						}
 						.floatBox {
-							width: 60%;
-							margin: 70px auto 0;
+							width: 80%;
+							overflow: hidden;
+							margin:0 auto;
 							.left {
 								float: left;
-								width: 50%;
+								width: 30%;
+							}
+							.center{
+								width: 30%;
+								float: left;
+								margin:0 5%;
 							}
 							.right {
 								float: right;
-								width: 50%;
+								width: 30%;
 							}
 						}
 						.brife {
@@ -235,19 +234,31 @@ export default {
 					}
 				}
 				&.floorBox2 {
-					.floorInner {
+					.title {
 						width: 80%;
-						height: 80%;
+						margin: 30px auto;
+						font-size: 40px;
+						font-weight: bolder;
+						line-height: 50px;
+						text-align: center;
+						transform: translateY(50px);
+						color: #000;
+					}
+					.floorInner {
+						width: 50%;
+						height: 70%;
 						position: absolute;
-						top: 50%;
+						top: 60%;
 						left: 50%;
 						transform: translate(-50%, -50%);
-						background: black;
+						/*background: #ccc;*/
 						.left {
 							float: left;
-							width: 33.33%;
-							height: 100%;
+							width: 30%;
+							height: 49%;
 							position: relative;
+							/*box-shadow: #1e1e29 0.3;*/
+							box-shadow: 5px 5px 10px #888;
 							img {
 								width: 100%;
 								height: 100%;
@@ -259,6 +270,12 @@ export default {
 								color: white;
 								font-size: 32px;
 							}
+						}
+						.center{
+							margin:0 5%;
+						}
+						.top{
+							margin-bottom:2%;
 						}
 					}
 				}
@@ -646,6 +663,62 @@ export default {
 					//   background-size: 100% 100%;
 					//   transition: all 10s linear;
 					// }
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1400px) {
+	#team {
+		.col-swipe-container {
+			.col-swipe-wrapper {
+				.floorBox {
+					&.floorBox1{
+						.floorInner {
+							padding: 10% 0 0 0;
+
+							.title {
+								width: 80%;
+								font-size: 45px;
+								font-weight: initial;
+								line-height: 80px;
+							}
+							.brife {
+								width: 80%;
+								margin: 30px auto 0;
+								font-size: 45px;
+							}
+						}
+					}
+					&.active {
+						.floorInner {
+							.title {
+								opacity: 1;
+								transform: translateY(0);
+								transition: all 1.5s 1s;
+							}
+
+							.brife {
+								opacity: 1;
+								transform: translateY(0);
+								transition: all 1.5s 1.5s;
+							}
+						}
+
+						.bg {
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							// transform: scale(1, 1);
+							transition: all 10s linear;
+						}
+
+						// &.bg {
+						//   background-size: 100% 100%;
+						//   transition: all 10s linear;
+						// }
+					}
 				}
 			}
 		}
