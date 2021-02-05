@@ -2,7 +2,7 @@
 <!--  <div id="floorBox">-->
     <div class="floorBox floorBox6 p-r">
       <div class="bg">
-        <img src="../assets/img/index/bg3.png" alt="" />
+        <img src="../assets/img/index/yunshi.png" alt="" />
       </div>
       <div class="floorInner">
         <div class="tip">
@@ -19,7 +19,7 @@
       </div>
       <div class="webFooter">
         <p class="tip">
-          - 2011～2019
+          - 2011～2021
           盈动资本|浙ICP备14004249号|Add：杭州市西湖区文一西路588号
           中节能西溪首座A2-1-522|Tel：86-571-87997755 -
         </p>

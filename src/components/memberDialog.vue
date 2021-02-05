@@ -47,16 +47,20 @@ export default {
 			height: 100%;
 			margin: 0 !important;
 			// position: relative;
+			overflow:hidden;
 			.el-dialog__header {
 				height: 0;
 				padding: 0;
+				.el-dialog__headerbtn{
+					background:#ccc;
+				}
 			}
 			.el-dialog__body {
 				width: 100%;
 				height: 100%;
 				padding: 0;
 			}
-
+			background: #ccc;
 			.left {
 				float: left;
 				width: 50%;

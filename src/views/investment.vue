@@ -9,7 +9,7 @@
       <div class="col-swipe-wrapper" ref="colSwipeWrapper">
         <div class="floorBox floorBox1" :class="{ active: top == 0 }">
           <div class="bg">
-            <img src="../assets/img/index/bg1.png" alt="" />
+            <img src="../assets/img/index/b7.png" alt="" />
           </div>
           <div class="floorInner">
             <p class="brife">专注早期，致力于寻找并帮助那些</p>
@@ -29,49 +29,779 @@
                   <div class="left">
                     <div class="center">
                       <div class="imgBox">
-                        <img src="../assets/img/index/logo.jpg" alt="" />
+                        <img src="../assets/img/index/51xyk.png" alt="" />
                       </div>
                       <div class="describe-wrap">
                         <div class="describe">
-                          理想汽车是一家提供未来智能交通工具研发和服务的企业。心动、便捷，是我们坚守的品牌价值。我们致力于打造最适合城市的日常出行工具，为全球超过二十亿的目标消费者提供最具价值的产品与服务。
+                          中国领先的信用卡账单管理工具
                         </div>
                       </div>
                       <div class="compant_more">
-                        <p><span>创始人</span><span>李想</span></p>
-                        <p><span>成立时间</span><span>2015</span></p>
+                        <p><span>创始人</span><span>孙海涛</span></p>
+                        <p><span>投资时间</span><span>2013年</span></p>
                         <p>
                           <span>官网</span
-                          ><a href="https://www.lixiang.com/" target="_blank"
-                            >https://www.lixiang.com/</a
+                          ><a href="https://www.u51.com/" target="_blank"
+                            >https://www.u51.com/</a
                           >
                         </p>
                       </div>
                     </div>
                   </div>
                   <div class="right">
-                    <img src="../assets/img/index/bg1.png" alt="" />
+                    <img src="../assets/img/index/b5.jpg" alt="" />
                   </div>
                 </div> </el-carousel-item
               ><el-carousel-item>
                 <div class="contentBox">
                   <div class="left">
                     <div class="center">
-                      <p>研究驱动</p>
+                      <div class="imgBox">
+                        <img src="../assets/img/index/xdkj.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          IoT+便民充电服务创领者
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>唐永波</span></p>
+                        <p><span>投资时间</span><span>2016年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="http://www.xiaodian.so/" target="_blank"
+                            >http://www.xiaodian.so/</a
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div class="right">
-                    <img src="../assets/img/index/bg1.png" alt="" />
+                    <img src="../assets/img/index/b5.jpg" alt="" />
                   </div>
                 </div> </el-carousel-item
               ><el-carousel-item>
                 <div class="contentBox">
                   <div class="left">
                     <div class="center">
-                      <p>独立思考</p>
+                      <div class="imgBox">
+                        <img src="../assets/img/index/rrsp.jpeg" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          国内专业的海外视频内容社区
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>周为民</span></p>
+                        <p><span>投资时间</span><span>2015年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="http://www.rr.tv/#/" target="_blank"
+                            >http://www.rr.tv/#/</a
+                          >
+                        </p>
+                      </div>
                     </div>
                   </div>
                   <div class="right">
-                    <img src="../assets/img/index/bg1.png" alt="" />
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/yow.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          科技+产业+投资平台和智库
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>王彬</span></p>
+                        <p><span>投资时间</span><span>2014年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.iyiou.com/" target="_blank"
+                            >https://www.iyiou.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/cp.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          青年文化媒体平台
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>陶伟华</span></p>
+                        <p><span>投资时间</span><span>2015年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://chaping.cn/" target="_blank"
+                            >https://chaping.cn/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/ywwl.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          国内领先的综合性数字营销服务提供商
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>谢如栋</span></p>
+                        <p><span>投资时间</span><span>2017年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.ywwl.com/" target="_blank"
+                            >https://www.ywwl.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/ppy.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          面向中小型非品牌便利店的智能集采平台
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>徐意</span></p>
+                        <p><span>投资时间</span><span>2018年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.pinpianyi.com/" target="_blank"
+                            >https://www.pinpianyi.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/mz.jpg" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          原创故事生产和IP运营公司
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>敬庶人</span></p>
+                        <p><span>投资时间</span><span>2017年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="http://www.damozhou.com/" target="_blank"
+                            >http://www.damozhou.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/ak.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          基于企业微信的私域流量运营平台
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>何健星</span></p>
+                        <p><span>投资时间</span><span>2017年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="http://www.aiagain.com/index.html" target="_blank"
+                            >http://www.aiagain.com/index.html</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/nncz.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          儿童体育教育平台
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>叶峰</span></p>
+                        <p><span>投资时间</span><span>2018年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.nncz.cn/" target="_blank"
+                            >https://www.nncz.cn/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/EMQ.jpeg" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          面向 5G 和物联网市场的消息与流处理开源软件公司
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>李枫</span></p>
+                        <p><span>投资时间</span><span>2016年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.emqx.io/cn/" target="_blank"
+                            >https://www.emqx.io/cn/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/makj.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          云计算时代的新兴网络安全公司
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>聂万泉</span></p>
+                        <p><span>投资时间</span><span>2017年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.moresec.cn/" target="_blank"
+                            >https://www.moresec.cn/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/dsy.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          数据中台基础设施建设服务商
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>陈吉平</span></p>
+                        <p><span>投资时间</span><span>2017年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.dtstack.com/" target="_blank"
+                            >https://www.dtstack.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/EasyStack.jpg" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          OpenStack云解决方案和服务提供商
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>陈喜伦</span></p>
+                        <p><span>投资时间</span><span>2015年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.easystack.cn/" target="_blank"
+                            >https://www.easystack.cn/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/SRT.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          以软体机器人技术为基础的创新型科技公司
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>高少龙</span></p>
+                        <p><span>投资时间</span><span>2017年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="http://www.softrobottech.com/" target="_blank"
+                            >http://www.softrobottech.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/youshu.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          数字科技应用服务专家
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>张利江</span></p>
+                        <p><span>投资时间</span><span>2019年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.youshu.com.cn/" target="_blank"
+                            >https://www.youshu.com.cn/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/qzkj.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          网络数据安全方案解决服务商
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>方兴</span></p>
+                        <p><span>投资时间</span><span>2018年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://qzkeji.com.cn/" target="_blank"
+                            >https://qzkeji.com.cn/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/yzwl.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          智能工业一站式服务商
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>司世南</span></p>
+                        <p><span>投资时间</span><span>2018年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.mgm-iot.com/" target="_blank"
+                            >https://www.mgm-iot.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/ydRPA.jpeg" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          RPA解决方案提供商
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>金礼剑</span></p>
+                        <p><span>投资时间</span><span>2019年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.winrobot360.com/" target="_blank"
+                            >https://www.winrobot360.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/mxkj.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          互动营销游戏产品研发商
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>朱健瑞</span></p>
+                        <p><span>投资时间</span><span>2020年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="http://www.moxigame.cn/#/" target="_blank"
+                            >http://www.moxigame.cn/#/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/shb.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          售后客户服务系统开发商
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>李明</span></p>
+                        <p><span>投资时间</span><span>2019年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.shb.ltd/" target="_blank"
+                            >https://www.shb.ltd/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/hpy.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          无代码应用搭建平台
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>陈金洲</span></p>
+                        <p><span>投资时间</span><span>2020年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://hipacloud.com/" target="_blank"
+                            >https://hipacloud.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/KodeRover.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          云原生 DevOps 服务商
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>李倩</span></p>
+                        <p><span>投资时间</span><span>2020年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.koderover.com/" target="_blank"
+                            >https://www.koderover.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/teamind.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          新一代远程互动会议平台
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>王晓磊</span></p>
+                        <p><span>投资时间</span><span>2020年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.teamind.co/" target="_blank"
+                            >https://www.teamind.co/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/xlb.jpeg" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          专业的商业情报搜索工具
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>汪拥军</span></p>
+                        <p><span>投资时间</span><span>2020年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.xiaolanben.com/" target="_blank"
+                            >https://www.xiaolanben.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/ypy.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          中国领先的数据云服务商企业
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>刘亮为</span></p>
+                        <p><span>投资时间</span><span>2015年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.upyun.com/" target="_blank"
+                            >https://www.upyun.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
+                  </div>
+                </div>
+              </el-carousel-item>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="left">
+                    <div class="center">
+                      <div class="imgBox">
+                        <img src="../assets/img/index/ShowMeBug.png" alt="" />
+                      </div>
+                      <div class="describe-wrap">
+                        <div class="describe">
+                          程序员在线面试工具
+                        </div>
+                      </div>
+                      <div class="compant_more">
+                        <p><span>创始人</span><span>李亚飞</span></p>
+                        <p><span>投资时间</span><span>2020年</span></p>
+                        <p>
+                          <span>官网</span
+                          ><a href="https://www.showmebug.com/" target="_blank"
+                            >https://www.showmebug.com/</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <img src="../assets/img/index/b5.jpg" alt="" />
                   </div>
                 </div>
               </el-carousel-item>
@@ -497,8 +1227,9 @@
                         left: 50%;
                         transform: translate(-50%, -50%);
                         .imgBox {
-                          width: 135px;
-                          height: 50px;
+                          width: 150px;
+                          height: auto;
+                          max-height:150px;
                           img {
                             width: 100%;
                             height: 100%;
@@ -554,7 +1285,7 @@
                 // background: red;
                 .el-carousel__indicator {
                   button {
-                    width: 200px;
+                    width: 8px;
                     height: 8px;
                     background: #a1a1b9;
                     border-radius: 5px;

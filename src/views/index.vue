@@ -9,7 +9,7 @@
       <div class="col-swipe-wrapper" ref="colSwipeWrapper">
         <div class="floorBox floorBox1" :class="{ active: top == 0 }">
           <div class="bg">
-            <img src="../assets/img/index/bg1.png" alt="" />
+            <img src="../assets/img/index/xueshan.png" alt="" />
           </div>
           <div class="floorInner">
             <p class="title">只投我们想要的世界</p>
@@ -27,7 +27,7 @@
         </div>
         <div class="floorBox floorBox2" :class="{ active: top == 1 }">
           <div class="bg">
-            <img src="../assets/img/index/bg1.png" alt="" />
+            <img src="../assets/img/index/huoxing.png" alt="" />
           </div>
           <div class="floorInner">
             <p class="title">盈动资本</p>
@@ -75,19 +75,19 @@
             <el-carousel :interval="4000" type="card">
               <el-carousel-item>
                 <div class="imgBox">
-                  <img src="../assets/img/index/bg1.png" alt="" />
+                  <img src="../assets/img/index/b2.png" alt="" />
                 </div>
                 <p>科技创新</p>
               </el-carousel-item>
               <el-carousel-item
                 ><div class="imgBox">
-                  <img src="../assets/img/index/bg3.png" alt="" />
+                  <img src="../assets/img/index/b1.jpg" alt="" />
                 </div>
                 <p>企业服务</p>
               </el-carousel-item>
               <el-carousel-item
                 ><div class="imgBox">
-                  <img src="../assets/img/index/bg1.png" alt="" />
+                  <img src="../assets/img/index/b3.png" alt="" />
                 </div>
                 <p>消费升级</p>
               </el-carousel-item>
