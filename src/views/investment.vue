@@ -891,7 +891,7 @@
         {url:require('../assets/img/index/logo/mxkj1.png'),text:"摩西科技"},
         {url:require('../assets/img/index/logo/shb1.png'),text:"售后宝"},
         {url:require('../assets/img/index/logo/hpy1.png'),text:"HIPA黑帕云"},
-        // {url:require('../assets/img/index/logo/kr1.png'),text:"KodeRover"},
+        {url:require('../assets/img/index/logo/kr1.png'),text:"KodeRover"},
         {url:require('../assets/img/index/logo/tm1.png'),text:"Teamind"},
         {url:require('../assets/img/index/logo/xlb1.png'),text:"小蓝本"},
         {url:require('../assets/img/index/logo/ypy1.png'),text:"又拍云"},
