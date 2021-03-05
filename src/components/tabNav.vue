@@ -5,16 +5,16 @@
     </div>
     <a class="rightList" href="http://www.incapital.cn/sign">管理</a>
     <ul class="middleList">
-      <li>
+      <li :class="{'scal':active =='/index'}">
         <router-link to="index" tag="a">我们</router-link>
       </li>
-      <li>
+      <li :class="{'scal':active =='/investment'}">
         <router-link to="investment" tag="a">投资</router-link>
       </li>
-      <li>
+      <li :class="{'scal':active =='/team'}">
         <router-link to="team" tag="a">团队</router-link>
       </li>
-      <li>
+      <li :class="{'scal':active =='/contact'}">
         <router-link to="contact" tag="a">联系</router-link>
       </li>
     </ul>
@@ -23,6 +23,26 @@
 <script>
 export default {
   name: "tabNav",
+  data() {
+		return {
+      active:"false"
+    }
+  },
+  mounted: function(){
+    console.log(this.$route.path)
+    if(this.$route.path == "/index"){
+      this.active ="/index"
+    }
+    if(this.$route.path == "/investment"){
+      this.active ="/investment"
+    }
+    if(this.$route.path == "/team"){
+      this.active ="/team"
+    }
+    if(this.$route.path == "/contact"){
+      this.active ="/contact"
+    }
+	},
 };
 </script>
 <style scoped lang="scss">
@@ -72,6 +92,10 @@ export default {
       a {
         color: black;
       }
+    }
+    .scal{
+      font-size: 15px;
+      font-weight: bold;
     }
   }
 }

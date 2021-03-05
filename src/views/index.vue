@@ -7,9 +7,21 @@
       @DOMMouseScroll="handleScroll($event)"
     >
       <div class="col-swipe-wrapper" ref="colSwipeWrapper">
-        <div class="floorBox floorBox1" :class="{ active: top == 0 }">
+        <div class="floorBox floorBox2" :class="{ active: top == 0 }">
           <div class="bg">
-            <img src="../assets/img/index/xueshan.png" alt="" />
+            <img src="../assets/img/index/web1-1.png" alt="" />
+          </div>
+          <div class="floorInner">
+            <p class="title">盈动资本</p>
+            <p class="brife">一家专注于科技和创新领域的早期投资机构。</p>
+            <p class="brife">
+              我们致力于寻找并帮助那些心怀崇高而热切愿望，具创新能力和企业家精神的创业者，一起成就伟大事业！
+            </p>
+          </div>
+        </div>
+        <div class="floorBox floorBox1" :class="{ active: top == 1 }">
+          <div class="bg">
+            <img src="../assets/img/index/web1-2.png" alt="" />
           </div>
           <div class="floorInner">
             <p class="title">只投我们想要的世界</p>
@@ -23,18 +35,6 @@
                 <p class="brife">150+</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="floorBox floorBox2" :class="{ active: top == 1 }">
-          <div class="bg">
-            <img src="../assets/img/index/huoxing.png" alt="" />
-          </div>
-          <div class="floorInner">
-            <p class="title">盈动资本</p>
-            <p class="brife">一家专注于科技和创新领域的早期投资机构。</p>
-            <p class="brife">
-              我们致力于寻找并帮助那些心怀崇高而热切愿望，具创新能力和企业家精神的创业者，一起成就伟大事业！
-            </p>
           </div>
         </div>
         <!-- <div class="floorBox floorBox3">
@@ -69,6 +69,9 @@
           </div>
         </div> -->
         <div class="floorBox floorBox4" :class="{ active: top == 2 }">
+          <div class="bg">
+            <img src="../assets/img/index/web1-3.png" alt="" />
+          </div>
           <p class="title">投资方向</p>
           <p class="brife">盈动资本深耕科技创新、企业服务和消费升级三大领域，致力于成为这些领域优秀创业者最坚定的支持者</p>
           <div class="investments">
@@ -127,7 +130,7 @@
             </el-carousel>
           </div>
         </div> -->
-        <footer-box class="footerBox"> </footer-box>
+        <footer-box class="footerBox"  :imgUrl="imgUrl"> </footer-box>
       </div>
     </div>
   </div>
@@ -142,6 +145,7 @@ export default {
     return {
       top: 0,
       timer: null,
+      imgUrl:require('../assets/img/index/web1-4.png')
     };
   },
   methods: {
@@ -244,7 +248,7 @@ export default {
             cursor: pointer;
 
             .title {
-              font-size: 120px;
+              font-size: 96px;
               font-weight: bolder;
               line-height: 150px;
               text-align: center;
@@ -272,7 +276,7 @@ export default {
               width: 100%;
               margin-top: 50px;
               text-align: center;
-              font-size: 48px;
+              font-size: 45px;
               line-height: 60px;
               transform: translateY(50px);
               opacity: 0;
@@ -295,7 +299,7 @@ export default {
             .title {
               width: 50%;
               margin: 0 auto;
-              font-size: 90px;
+              font-size: 96px;
               font-weight: bolder;
               line-height: 150px;
               text-align: center;

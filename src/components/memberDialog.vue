@@ -1,27 +1,25 @@
 <template>
-	<div id="memberDialog">
+	<div id="memberDialog" @click="handleClose">
 		<el-dialog :visible.sync="showMemder" :before-close="handleClose">
 			<div class="left">
 				<div class="center">
-					<!-- <div class="imgBox">
-						<img src="../assets/img/index/logo.jpg" alt="" />
-					</div> -->
 					<div class="describe-wrap">
-						<div class="describe">
-							{{message}}
+						<div class="describes">
+							{{titlename}}
 						</div>
 					</div>
-					<!-- <div class="compant_more">
-						<p><span>创始人</span><span>李想</span></p>
-						<p><span>成立时间</span><span>2015</span></p>
-						<p>
-							<span>官网</span><a href="https://www.lixiang.com/" target="_blank">https://www.lixiang.com/</a>
-						</p>
-					</div> -->
 				</div>
 			</div>
 			<div class="right">
-				<img :src="url" alt="" />
+				<div class="bgcolor">
+					<div class="center">
+						<div class="describe-wrap">
+							<div class="describe">
+								{{message}}
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</el-dialog>
 	</div>
@@ -29,7 +27,7 @@
 <script>
 export default {
 	name: 'memberDialog',
-	props: ['showMemder',"message","url"],
+	props: ['showMemder',"message","url","titlename"],
 	methods: {
 		handleClose() {
 			this.$emit('closeMember');
@@ -61,11 +59,11 @@ export default {
 				padding: 0;
 			}
 			background: #ccc;
-			.left {
+			.left ,.right{
 				float: left;
 				width: 50%;
 				height: 100%;
-				background: #4a90e2;
+				background: rgb(32, 78, 139);
 				position: relative;
 				.center {
 					height: auto;
@@ -88,6 +86,9 @@ export default {
 						font-size: 16px;
 						line-height: 2;
 						word-break: break-word;
+						.describes{
+							font-size: 32px;
+						}
 					}
 					.compant_more {
 						margin-top: 20px;
@@ -108,12 +109,24 @@ export default {
 			}
 			.right {
 				float: right;
-				width: 50%;
-				height: 100%;
-				background: blue;
-				img {
-					width: 100%;
-					height: 100%;
+				background: url("../assets/img/index/web3-z.png") no-repeat;
+                background-size: 100% 100%;
+				color:#000;
+				.bgcolor{
+					// width: 100%;
+					// height: 100%;
+					// background-color: rgba(255,255,255,0.7);
+					.center {
+						.describe-wrap {
+							margin-top: 20px;
+							.describe {
+								color: #000;
+								a {
+									color: #000;
+								}
+							}
+						}
+					}
 				}
 			}
 		}

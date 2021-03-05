@@ -2,7 +2,7 @@
 <!--  <div id="floorBox">-->
     <div class="floorBox floorBox6 p-r">
       <div class="bg">
-        <img src="../assets/img/index/yunshi.png" alt="" />
+        <img :src="imgUrl" alt="" />
       </div>
       <div class="floorInner">
         <div class="tip">
@@ -30,7 +30,28 @@
 <script>
 export default {
   name: "footerBox",
+  data() {
+		return {
+      imgUrl:""
+    }
+  },
+  created: function(){
+    console.log(this.$route.path)
+    if(this.$route.path == "/index"){
+      this.imgUrl =require('../assets/img/index/web1-4.png')
+    }
+    if(this.$route.path == "/investment"){
+      this.imgUrl =require('../assets/img/index/web2-3.png')
+    }
+    if(this.$route.path == "/team"){
+      this.imgUrl =require('../assets/img/index/web3-4.png')
+    }
+    if(this.$route.path == "/contact"){
+      this.imgUrl =require('../assets/img/index/web4-1.png')
+    }
+	},
 };
+
 </script>
 <style scoped lang="scss">
   .p-r{
@@ -82,16 +103,16 @@ export default {
                 p {
                   line-height: 45px;
                   text-align: center;
-                  font-size: 20px;
+                  font-size: 32px;
                   color: white;
                   .m-r20{
                     margin-right: 20px;
                   }
                 }
                 .footTitle{
-                  font-size: 55px;
+                  font-size: 96px;
                   font-weight: bolder;
-                  padding-bottom: 60px;
+                  padding-bottom: 180px;
                 }
                 .about{
                   /*margin-top:60px;*/
@@ -126,7 +147,7 @@ export default {
               bottom: 0;
               left: 0;
               width: 100%;
-
+              background: #525252;
               .tip {
                 text-align: center;
                 padding: 30px 0;

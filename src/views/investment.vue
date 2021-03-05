@@ -9,7 +9,7 @@
       <div class="col-swipe-wrapper" ref="colSwipeWrapper">
         <div class="floorBox floorBox1" :class="{ active: top == 0 }">
           <div class="bg">
-            <img src="../assets/img/index/b7.png" alt="" />
+            <img src="../assets/img/index/web2-1.png" alt="" />
           </div>
           <div class="floorInner">
             <p class="brife">专注早期，致力于寻找并帮助那些</p>
@@ -21,8 +21,24 @@
             </p>
           </div>
         </div>
-        <div class="floorBox floorBox5" :class="{ active: top == 1 }">
-          <div class="box">
+        <div class="floorBox floorBox5" :class="{ active: top == 1 }" @click="bannerShowClick">
+          <div class="box" v-show="!bannerShow">
+            <el-carousel>
+              <el-carousel-item>
+                <div class="contentBox">
+                  <div class="centerBox">
+                    <ul class="ulBox">
+                      <li  v-for="(item,i ) in list">
+                        <img :src=item.url alt="" width="200px" height="100px">
+                        <p>{{item.text}}</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div> 
+              </el-carousel-item>
+            </el-carousel>
+          </div>
+          <div class="box" v-show="bannerShow">
             <el-carousel>
               <el-carousel-item>
                 <div class="contentBox">
@@ -31,25 +47,26 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/51xyk.png" alt="" />
                       </div>
-                      <div class="describe-wrap">
-                        <div class="describe">
-                          中国领先的信用卡账单管理工具
-                        </div>
-                      </div>
-                      <div class="compant_more">
-                        <p><span>创始人</span><span>孙海涛</span></p>
-                        <p><span>投资时间</span><span>2013年</span></p>
-                        <p>
-                          <span>官网</span
-                          ><a href="https://www.u51.com/" target="_blank"
-                            >https://www.u51.com/</a
-                          >
-                        </p>
-                      </div>
                     </div>
                   </div>
                   <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
+                    <div class="center">
+                        <div class="describe-wrap">
+                          <div class="describe">
+                            中国领先的信用卡账单管理工具
+                          </div>
+                        </div>
+                        <div class="compant_more">
+                          <p><span>创始人</span><span>孙海涛</span></p>
+                          <p><span>投资时间</span><span>2013年</span></p>
+                          <p>
+                            <span>官网</span
+                            ><a href="https://www.u51.com/" target="_blank"
+                              >https://www.u51.com/</a
+                            >
+                          </p>
+                        </div>
+                    </div>
                   </div>
                 </div> </el-carousel-item
               ><el-carousel-item>
@@ -59,6 +76,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/xdkj.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           IoT+便民充电服务创领者
@@ -76,9 +97,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div> </el-carousel-item
               ><el-carousel-item>
                 <div class="contentBox">
@@ -87,6 +105,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/rrsp.jpeg" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           国内专业的海外视频内容社区
@@ -104,9 +126,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -116,6 +135,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/yow.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           科技+产业+投资平台和智库
@@ -133,9 +156,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -145,6 +165,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/cp.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           青年文化媒体平台
@@ -162,9 +186,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -174,6 +195,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/ywwl.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           国内领先的综合性数字营销服务提供商
@@ -191,9 +216,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -203,6 +225,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/ppy.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           面向中小型非品牌便利店的智能集采平台
@@ -220,9 +246,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -232,6 +255,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/mz.jpg" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           原创故事生产和IP运营公司
@@ -249,9 +276,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -261,6 +285,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/ak.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           基于企业微信的私域流量运营平台
@@ -278,9 +306,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -290,6 +315,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/nncz.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           儿童体育教育平台
@@ -307,9 +336,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -319,6 +345,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/EMQ.jpeg" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           面向 5G 和物联网市场的消息与流处理开源软件公司
@@ -336,9 +366,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -348,6 +375,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/makj.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           云计算时代的新兴网络安全公司
@@ -365,9 +396,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -377,6 +405,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/dsy.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           数据中台基础设施建设服务商
@@ -394,9 +426,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -406,6 +435,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/EasyStack.jpg" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           OpenStack云解决方案和服务提供商
@@ -423,9 +456,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -435,6 +465,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/SRT.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           以软体机器人技术为基础的创新型科技公司
@@ -452,9 +486,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -464,6 +495,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/youshu.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           数字科技应用服务专家
@@ -481,9 +516,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -493,6 +525,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/qzkj.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           网络数据安全方案解决服务商
@@ -510,9 +546,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -522,6 +555,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/yzwl.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           智能工业一站式服务商
@@ -539,9 +576,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -551,6 +585,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/ydRPA.jpeg" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           RPA解决方案提供商
@@ -568,9 +606,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -580,6 +615,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/mxkj.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           互动营销游戏产品研发商
@@ -597,9 +636,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -609,6 +645,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/shb.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           售后客户服务系统开发商
@@ -626,9 +666,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -638,6 +675,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/hpy.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           无代码应用搭建平台
@@ -655,9 +696,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -667,6 +705,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/KodeRover.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           云原生 DevOps 服务商
@@ -684,9 +726,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -696,6 +735,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/teamind.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           新一代远程互动会议平台
@@ -713,9 +756,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -725,6 +765,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/xlb.jpeg" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           专业的商业情报搜索工具
@@ -742,9 +786,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -754,6 +795,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/ypy.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           中国领先的数据云服务商企业
@@ -771,9 +816,6 @@
                       </div>
                     </div>
                   </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
-                  </div>
                 </div>
               </el-carousel-item>
               <el-carousel-item>
@@ -783,6 +825,10 @@
                       <div class="imgBox">
                         <img src="../assets/img/index/ShowMeBug.png" alt="" />
                       </div>
+                    </div>
+                  </div>
+                  <div class="right">
+                    <div class="center">
                       <div class="describe-wrap">
                         <div class="describe">
                           程序员在线面试工具
@@ -799,9 +845,6 @@
                         </p>
                       </div>
                     </div>
-                  </div>
-                  <div class="right">
-                    <img src="../assets/img/index/b5.jpg" alt="" />
                   </div>
                 </div>
               </el-carousel-item>
@@ -823,6 +866,37 @@
     return {
       top: 0,
       timer: null,
+      imgUrl:require('../assets/img/index/web2-3.png'),
+      bannerShow:false,
+      list:[
+        {url:require('../assets/img/index/logo/51xyk1.png'),text:"51信用卡"},
+        {url:require('../assets/img/index/logo/xdkj1.png'),text:"小电科技"},
+        {url:require('../assets/img/index/logo/rrsp1.png'),text:"人人视频"},
+        {url:require('../assets/img/index/logo/yow1.png'),text:"亿欧网"},
+        {url:require('../assets/img/index/logo/cp1.png'),text:"差评"},
+        {url:require('../assets/img/index/logo/ywwl1.png'),text:"遥望网络"},
+        {url:require('../assets/img/index/logo/ppy1.png'),text:"拼便宜"},
+        {url:require('../assets/img/index/logo/mz1.png'),text:"魔宙"},
+        {url:require('../assets/img/index/logo/ak1.png'),text:"艾客"},
+        {url:require('../assets/img/index/logo/nncz1.png'),text:"牛牛成长"},
+        {url:require('../assets/img/index/logo/emq1.png'),text:"EMQ"},
+        {url:require('../assets/img/index/logo/makj1.png'),text:"默安科技"},
+        {url:require('../assets/img/index/logo/dsy1.png'),text:"袋鼠云"},
+        {url:require('../assets/img/index/logo/es1.png'),text:"EasyStack"},
+        {url:require('../assets/img/index/logo/srt1.png'),text:"SRT软体机器人"},
+        {url:require('../assets/img/index/logo/yskj1.png'),text:"有数科技"},
+        {url:require('../assets/img/index/logo/qzkj1.png'),text:"全知科技"},
+        {url:require('../assets/img/index/logo/yzwl1.png'),text:"语祯物联"},
+        {url:require('../assets/img/index/logo/yd1.png'),text:"影刀RPA"},
+        {url:require('../assets/img/index/logo/mxkj1.png'),text:"摩西科技"},
+        {url:require('../assets/img/index/logo/shb1.png'),text:"售后宝"},
+        {url:require('../assets/img/index/logo/hpy1.png'),text:"HIPA黑帕云"},
+        // {url:require('../assets/img/index/logo/kr1.png'),text:"KodeRover"},
+        {url:require('../assets/img/index/logo/tm1.png'),text:"Teamind"},
+        {url:require('../assets/img/index/logo/xlb1.png'),text:"小蓝本"},
+        {url:require('../assets/img/index/logo/ypy1.png'),text:"又拍云"},
+        {url:require('../assets/img/index/logo/smb1.png'),text:"ShowMeBug"}
+      ]
     };
   },
   methods: {
@@ -853,6 +927,14 @@
       str += "%";
       return str;
     },
+    bannerShowClick(){
+      if(this.bannerShow){
+        this.bannerShow=false;
+      }else{
+        this.bannerShow=true;
+      }
+      
+    }
   },
 };
 </script>
@@ -1217,8 +1299,24 @@
                       width: 50%;
                       height: 100%;
                     }
+                    .centerBox{
+                      width: 90%;
+                      // background: red;
+                      margin-left: 5%;
+                      // transform: translateX(-40%);
+                      padding-top:1%;
+                      .ulBox li{
+                        float:left;width:280px;text-align: center;margin-bottom:40px;
+                        p{
+                          font-size:24px;margin-top:10px;color:#333;
+                        }
+                        img{
+                          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+                        }
+                      }
+                    }
                     .left {
-                      background: #4a90e2;
+                      background: rgb(32, 78, 139);
                       position: relative;
                       .center {
                         height: auto;
@@ -1261,18 +1359,47 @@
                       }
                     }
                     .right {
-                      img {
-                        width: 100%;
-                        height: 100%;
+                      position: relative;
+                      background: url("../assets/img/index/web2-z.png") no-repeat;
+                      background-size: 100% 100%;
+                      .center {
+                        height: auto;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        .describe-wrap {
+                            // width: 70%;
+                            color: #000;
+                            margin-top: 30px;
+                            font-size: 16px;
+                            line-height: 2;
+                            word-break: break-word;
+                          }
+                          .compant_more {
+                            margin-top: 20px;
+                            p {
+                              display: flex;
+                              margin-top: 20px;
+                              color: #000;
+                              font-size: 14px;
+                              span:first-child {
+                                width: 80px;
+                              }
+                              a {
+                                color:#000;
+                              }
+                            }
+                          }
                       }
                     }
                   }
                 }
                 .el-carousel__item:nth-child(2n) {
-                  background-color: #99a9bf;
+                  // background-color: #99a9bf;
                 }
                 .el-carousel__item:nth-child(2n + 1) {
-                  background-color: #d3dce6;
+                  // background-color: #d3dce6;
                 }
               }
               .el-carousel__indicators {

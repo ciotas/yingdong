@@ -5,7 +5,7 @@
 			<div class="col-swipe-wrapper" ref="colSwipeWrapper">
 				<div class="floorBox floorBox1" :class="{ active: top == 0 }">
 					<div class="bg">
-						<img src="../assets/img/index/b6.png" alt="" />
+						<img src="../assets/img/index/web3-1.png" alt="" />
 					</div>
 					<div class="floorInner">
 						<div class="floatBox">
@@ -19,59 +19,75 @@
 								<p class="brife">独立思考</p>
 							</div>
 						</div>
-						<p class="title">我们相信科技和创新是驱动社会进步的核心力量</p>
-
+						<!-- <p class="title">我们相信科技和创新是驱动社会进步的核心力量</p> -->
 					</div>
 				</div>
 				<div class="floorBox floorBox2" :class="{ active: top == 1 }">
+					<div class="bg">
+						<img src="../assets/img/index/web3-2.png" alt="" />
+					</div>
 					<p class="title">团队介绍</p>
 					<div class="floorInner">
-						<div class="left top" @click="showDialog(message1,url1)">
-							<img src="../assets/img/index/xiang.jpeg" alt="">
+						<div class="photoBox"  style="top:40%;left:15%">
+							<div class="photo" @click="showDialog(message1,url1,titlename1)">
+								<img src="../assets/img/index/xiang.jpeg" alt="">
+							</div>
 							<p>项建标</p>
 						</div>
-						<div class="left center  top"  @click="showDialog(message2,url2)">
-							<img src="../assets/img/index/jiang.jpeg" alt="">
+						<div class="photoBox"  style="top:15%;left:26%;transform: scale(0.7, 0.7);">
+							<div class="photo" @click="showDialog(message2,url2,titlename2)">
+								<img src="../assets/img/index/jiang.jpeg" alt="">
+							</div>
 							<p>蒋舜</p>
 						</div>
-						<div class="left right  top"  @click="showDialog(message3,url3)">
-							<img src="../assets/img/index/ni.jpeg" alt="">
+						<div class="photoBox"  style="top:41%;left:32%;transform: scale(0.8, 0.8);">
+							<div class="photo" @click="showDialog(message3,url3,titlename3)">
+								<img src="../assets/img/index/ni.jpeg" alt="">
+							</div>
 							<p>倪小凤</p>
 						</div>
-						<div class="left" @click="showDialog(message4,url1)">
-							<img src="../assets/img/index/han.jpeg" alt="">
+						<div class="photoBox"  style="top:33%;left:45%;transform: scale(0.9, 0.9);">
+							<div class="photo" @click="showDialog(message4,url1,titlename4)">
+								<img src="../assets/img/index/han.jpeg" alt="">
+							</div>
 							<p>韩冰</p>
 						</div>
-						<div class="left center"  @click="showDialog(message5,url2)">
-							<img src="../assets/img/index/wang.jpeg" alt="">
+						<div class="photoBox"  style="top:20%;left:55%;transform: scale(0.6, 0.6);">
+							<div class="photo" @click="showDialog(message5,url1,titlename5)">
+								<img src="../assets/img/index/wang.jpeg" alt="">
+							</div>
 							<p>王磊</p>
 						</div>
-						<div class="left"  @click="showDialog(message5,url2)">
-							<img src="../assets/img/index/luo.jpeg" alt="">
+						<div class="photoBox"  style="top:18%;left:70%;transform: scale(0.7, 0.7);">
+							<div class="photo" @click="showDialog(message6,url1,titlename6)">
+								<img src="../assets/img/index/luo.jpeg" alt="">
+							</div>
 							<p>罗威</p>
 						</div>
-						<div class="left right"  @click="showDialog(message6,url3)">
-							<img src="../assets/img/index/fang.jpeg" alt="">
+						<div class="photoBox"  style="top:38%;left:75%;transform: scale(0.6, 0.6);">
+							<div class="photo" @click="showDialog(message7,url1,titlename7)" style="height:220px;">
+								<img src="../assets/img/index/fang.jpeg" alt="">
+							</div>
 							<p>方凯</p>
 						</div>
 					</div>
 				</div>
 				<div class="floorBox floorBox3" :class="{ active: top == 2 }">
 					<div class="bg">
-						<img src="../assets/img/index/b4.png" alt="" />
+						<img src="../assets/img/index/web3-3.png" alt="" />
 					</div>
-					<!-- <div class="floorInner">
-						<p class="title">盈动资本</p>
-						<p class="brife">一家专注于科技和创新领域的早期投资机构。</p>
+					<div class="floorInner">
+						<!-- <p class="titlename">盈动资本</p>
+						<p class="brife">一家专注于科技和创新领域的早期投资机构。</p> -->
 						<p class="brife">
-							我们致力于寻找并帮助那些心怀崇高而热切愿望，具创新能力和企业家精神的创业者，一起成就伟大事业
+							我们相信科技和创新是驱动社会进步的核心力量
 						</p>
-					</div> -->
+					</div>
 				</div>
 				<footer-box class="footerBox"> </footer-box>
 			</div>
 		</div>
-		<memberDialog :showMemder="showMemder" @closeMember="closeMember" :message="message" :url="url">
+		<memberDialog :showMemder="showMemder" @closeMember="closeMember" :message="message" :url="url" :titlename="titlename">
 		</memberDialog>
 	</div>
 </template>
@@ -89,27 +105,38 @@ export default {
 			showMemder: false,
 			message: '',
 			url: '',
+			titlename: '',
 			url1: require('../assets/img/index/b5.jpg'),
 			url2: require('../assets/img/index/b5.jpg'),
 			url3: require('../assets/img/index/b5.jpg'),
 			url4: require('../assets/img/index/b5.jpg'),
 			url5: require('../assets/img/index/b5.jpg'),
 			url6: require('../assets/img/index/b5.jpg'),
+			url7: require('../assets/img/index/b5.jpg'),
+			titlename1: '项建标',
+			titlename2: '蒋舜',
+			titlename3: '倪小凤',
+			titlename4: '韩冰',
+			titlename5: '王磊',
+			titlename6: '罗威',
+			titlename7: '方凯',
 			message1: '盈动资本创始合伙人，良仓孵化器与湾区孵化器创始人，创投媒体「B座12楼」创始人，同时也是51信用卡、小电科技、遥望网络、袋鼠云、EMQ、Easystack等100多个项目的早期投资人。著有《互联网思维到底是什么》一书。',
 			message2: '浙江十大天使投资人。连续多年获得「中国最佳天使投资人TOP30」，在企业服务、文化创意产业、互联网金融等方面有深入研究。代表案例：小电科技、人人视频、魔宙、机蜜等。',
 			message3: '盈动资本风控、投后负责人。在盈动资本任职多年，有丰富的风险控制、投后管理经验。',
 			message4: '企服领域连续创业者，在产品研发、发展策略和商业模式等方面具备丰富经验。 主导投资企服项目： 黑帕云、售后宝、ShowMeBug等，小饭桌2020企业服务领域新锐投资人TOP10。',
 			message5: '武汉大学计算机科学与技术硕士，University of York HCIT 硕士，天使湾创投合伙人；断点创投合伙人。投资案例：扇贝单词、大姨妈、极验验证、趣运动。',
 			message6: '毕业于浙江大学，曾就职于网易游戏雷火游戏、腾讯北极光工作室。关注新娱乐新消费，已投项目包括牛牛成长、摩西科技、游戏俱乐部YTG、分外传媒等。',
+			message7: '毕业于浙江大学，曾任职于申万宏源、国家智库。专注企业服务、产业互联网的早中期投资。主导和参与投资企业影刀 RPA、袋鼠云、Koderover、Teamind、语祯物联等。',
 		};
 	},
 	methods: {
 		closeMember() {
 			this.showMemder = false;
 		},
-		showDialog(msg, url) {
+		showDialog(msg, url,titlename) {
 			this.message = msg;
 			this.url = url;
+			this.titlename = titlename;
 			this.showMemder = true;
 		},
 		scroll(e) {
@@ -197,7 +224,7 @@ export default {
 					.floorInner {
 						width: 100%;
 						height: 100%;
-						padding: 260px 0 0 0;
+						padding: 20% 0 0 0;
 						box-sizing: border-box;
 						font-family: HYQiHei-AZEJF, HYQiHei;
 						color: #ffffff;
@@ -255,12 +282,12 @@ export default {
 						color: #000;
 					}
 					.floorInner {
-						width: 50%;
-						height: 70%;
-						position: absolute;
-						top: 60%;
-						left: 50%;
-						transform: translate(-50%, -50%);
+						width: 100%;
+						height: 100%;
+						position: relative;
+						// top: 60%;
+						// left: 20%;
+						// transform: translate(-50%, -50%);
 						/*background: #ccc;*/
 						.left {
 							float: left;
@@ -293,13 +320,33 @@ export default {
 							margin-left:5%;
 							width: 22%;
 						}
+						.photoBox{
+							width: 200px;
+							height:300px;
+							position:absolute;
+							p{
+								margin-top: 10px;
+								font-size: 20px;;
+							}
+						}
+						.photo{
+							width:200px;
+							height:210px;
+							overflow: hidden;
+							box-shadow: 5px 5px 10px #888;
+							background: rgba(255,255,255,0.8);
+							img{
+								width:200px;
+								height:300px;
+							}
+						}
 					}
 				}
 				&.floorBox3 {
 					.floorInner {
 						width: 100%;
 						height: 100%;
-						padding: 150px 0 0 0;
+						padding: 20% 0 0 0;
 						box-sizing: border-box;
 						font-family: HYQiHei-AZEJF, HYQiHei;
 						color: #ffffff;
@@ -317,13 +364,14 @@ export default {
 							transition: all 0;
 						}
 						.brife {
-							width: 50%;
+							width: 100%;
 							margin: 50px auto 0;
 							font-size: 32px;
 							line-height: 60px;
 							transform: translateY(50px);
 							opacity: 0;
 							transition: all 0;
+							text-align: center;
 						}
 					}
 				}
