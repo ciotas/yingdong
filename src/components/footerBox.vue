@@ -228,6 +228,15 @@ export default {
               }
 
             }
+            &.floorBox6 {
+
+              .tip {
+                .footTitle{
+                  padding-bottom: 120px;
+                }
+
+              }
+            }
           }
         }
       }

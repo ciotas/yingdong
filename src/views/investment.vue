@@ -29,7 +29,7 @@
                   <div class="centerBox">
                     <ul class="ulBox">
                       <li  v-for="(item,i ) in list">
-                        <img :src=item.url alt="" width="200px" height="100px">
+                        <img :src=item.url alt="">
                         <p>{{item.text}}</p>
                       </li>
                     </ul>
@@ -1311,7 +1311,7 @@
                           font-size:24px;margin-top:10px;color:#333;
                         }
                         img{
-                          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+                          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);width:200px;height:100px;
                         }
                       }
                     }
@@ -1394,12 +1394,6 @@
                       }
                     }
                   }
-                }
-                .el-carousel__item:nth-child(2n) {
-                  // background-color: #99a9bf;
-                }
-                .el-carousel__item:nth-child(2n + 1) {
-                  // background-color: #d3dce6;
                 }
               }
               .el-carousel__indicators {
@@ -1526,6 +1520,52 @@
               }
             }
           }
+        &.floorBox5 {
+          /deep/.box {
+            width: 100%;
+            height: 100%;
+            padding: 60px 0 0;
+            box-sizing: border-box;
+            .el-carousel {
+              width: 100%;
+              height: 100%;
+              .el-carousel__container {
+                width: 100%;
+                height: 100%;
+                // height: calc(100% - 40px);
+                .el-carousel__item {
+                  width: 100%;
+                  height: 100%;
+                  .contentBox {
+                    width: 100%;
+                    height: 100%;
+                    > div {
+                      display: inline-block;
+                      width: 50%;
+                      height: 100%;
+                    }
+                    .centerBox{
+                      width: 90%;
+                      // background: red;
+                      margin-left: 5%;
+                      // transform: translateX(-40%);
+                      padding-top:1%;
+                      .ulBox li{
+                        float:left;width:190px;text-align: center;margin-bottom:35px;;
+                        p{
+                          font-size:24px;margin-top:10px;color:#333;
+                        }
+                        img{
+                          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);width:150px;height:75px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
           &.active {
             .floorInner {
               .title {

@@ -28,43 +28,43 @@
 					</div>
 					<p class="title">团队介绍</p>
 					<div class="floorInner">
-						<div class="photoBox"  style="top:40%;left:15%">
+						<div class="photoBox photoBox1">
 							<div class="photo" @click="showDialog(message1,url1,titlename1)">
 								<img src="../assets/img/index/xiang.jpeg" alt="">
 							</div>
 							<p>项建标</p>
 						</div>
-						<div class="photoBox"  style="top:15%;left:26%;transform: scale(0.7, 0.7);">
+						<div class="photoBox photoBox2">
 							<div class="photo" @click="showDialog(message2,url2,titlename2)">
 								<img src="../assets/img/index/jiang.jpeg" alt="">
 							</div>
 							<p>蒋舜</p>
 						</div>
-						<div class="photoBox"  style="top:41%;left:32%;transform: scale(0.8, 0.8);">
+						<div class="photoBox photoBox3">
 							<div class="photo" @click="showDialog(message3,url3,titlename3)">
 								<img src="../assets/img/index/ni.jpeg" alt="">
 							</div>
 							<p>倪小凤</p>
 						</div>
-						<div class="photoBox"  style="top:33%;left:45%;transform: scale(0.9, 0.9);">
+						<div class="photoBox  photoBox4">
 							<div class="photo" @click="showDialog(message4,url1,titlename4)">
 								<img src="../assets/img/index/han.jpeg" alt="">
 							</div>
 							<p>韩冰</p>
 						</div>
-						<div class="photoBox"  style="top:20%;left:55%;transform: scale(0.6, 0.6);">
+						<div class="photoBox photoBox5">
 							<div class="photo" @click="showDialog(message5,url1,titlename5)">
 								<img src="../assets/img/index/wang.jpeg" alt="">
 							</div>
 							<p>王磊</p>
 						</div>
-						<div class="photoBox"  style="top:18%;left:70%;transform: scale(0.7, 0.7);">
+						<div class="photoBox photoBox6">
 							<div class="photo" @click="showDialog(message6,url1,titlename6)">
 								<img src="../assets/img/index/luo.jpeg" alt="">
 							</div>
 							<p>罗威</p>
 						</div>
-						<div class="photoBox"  style="top:38%;left:75%;transform: scale(0.6, 0.6);">
+						<div class="photoBox photoBox7">
 							<div class="photo" @click="showDialog(message7,url1,titlename7)" style="height:220px;">
 								<img src="../assets/img/index/fang.jpeg" alt="">
 							</div>
@@ -329,6 +329,13 @@ export default {
 								font-size: 20px;;
 							}
 						}
+						.photoBox1{top:40%;left:15%;}
+						.photoBox2{top:15%;left:26%;transform: scale(0.7, 0.7);}
+						.photoBox3{top:41%;left:32%;transform: scale(0.8, 0.8);}
+						.photoBox4{top:33%;left:45%;transform: scale(0.9, 0.9);}
+						.photoBox5{top:20%;left:55%;transform: scale(0.6, 0.6);}
+						.photoBox6{top:18%;left:70%;transform: scale(0.7, 0.7);}
+						.photoBox7{top:38%;left:75%;transform: scale(0.6, 0.6);}
 						.photo{
 							width:200px;
 							height:210px;
@@ -754,6 +761,27 @@ export default {
 							}
 						}
 					}
+					&.floorBox2 {
+					.title {
+						width: 80%;
+						margin: 30px auto;
+						font-size: 40px;
+						font-weight: bolder;
+						line-height: 50px;
+						text-align: center;
+						transform: translateY(50px);
+						color: #000;
+					}
+					.floorInner {
+						.photoBox1{top:40%;left:5%;}
+						.photoBox2{top:15%;left:20%;transform: scale(0.7, 0.7);}
+						.photoBox3{top:41%;left:23%;transform: scale(0.8, 0.8);}
+						.photoBox4{top:33%;left:38%;transform: scale(0.9, 0.9);}
+						.photoBox5{top:20%;left:52%;transform: scale(0.6, 0.6);}
+						.photoBox6{top:18%;left:70%;transform: scale(0.7, 0.7);}
+						.photoBox7{top:38%;left:75%;transform: scale(0.6, 0.6);}
+					}
+					}
 					&.active {
 						.floorInner {
 							.title {
@@ -786,6 +814,7 @@ export default {
 				}
 			}
 		}
+		
 	}
 }
 // @media (max-height: 568px) {
