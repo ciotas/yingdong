@@ -232,7 +232,7 @@ export default {
 
               .tip {
                 .footTitle{
-                  padding-bottom: 120px;
+                  padding-bottom: 80px;
                 }
 
               }
