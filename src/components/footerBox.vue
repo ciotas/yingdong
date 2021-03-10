@@ -176,7 +176,7 @@ export default {
     }
   @media screen and (max-width: 1400px) {
     /*@media (max-height: 300px) {*/
-    #index {
+    #index ,#team,#investment{
       .col-swipe-container {
         .col-swipe-wrapper {
           .floorBox {

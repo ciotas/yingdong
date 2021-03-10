@@ -782,6 +782,13 @@ export default {
 						.photoBox7{top:38%;left:75%;transform: scale(0.6, 0.6);}
 					}
 					}
+					&.floorBox6 {
+						.tip {
+							.footTitle{
+							padding-bottom: 80px;
+							}
+						}
+					}
 					&.active {
 						.floorInner {
 							.title {
